@@ -1,0 +1,70 @@
+
+.carousel-dynamicContent
+{
+  display:none;
+}
+h3,h4{
+  color:#ffffff;
+}
+.carousel-slider-img
+{
+  margin:auto;
+  width:100%; 
+  min-height:450px;
+}
+.carousel-panel
+{
+  min-height:450px;
+
+}
+.carousel-custom-slider
+{
+  min-height:400px;
+ 
+  top:0px;
+}
+@media (min-width: 768px) {
+.carousel-custom {
+ visibility: visible;
+
+
+}
+.carousel-dynamicContent
+{
+  display:block;
+}
+.form-cls
+{
+
+    position:relative;
+    top:20px;
+}
+
+.carousel-dynamicContent
+{
+  position:absolute;
+  top:10px;
+  left:70%;
+  height:40px;
+
+}
+.carousel-custom {
+ visibility: visible;
+ background-image:none;
+
+}
+
+
+ }
+
+ 
+@media (min-width: 1024px) {
+.carousel-custom {
+ visibility: visible;
+
+
+}
+
+
+
+ }

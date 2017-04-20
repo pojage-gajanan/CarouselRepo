@@ -1,0 +1,14 @@
+<carousel [interval]="NextPhotoInterval" [noWrap]="noLoopSlides" >
+                          <slide *ngFor="let slidez of slides; let index=index"
+                                 [active]="slidez.active" class="carousel-panel">
+                              
+                              <img [src]="slidez.image" class="carousel-slider-img">
+        <div class="carousel-caption carousel-custom-slider" style="left:10px;float:left">
+               <plan-book></plan-book>
+        </div>
+               <div class="carousel-dynamicContent" stye="width:40px;height:50px;">
+               <carousel-offer [url]="slidez.offer " [msg]="slidez.msg"></carousel-offer>
+                            </div>
+               
+                          </slide>
+                        </carousel>

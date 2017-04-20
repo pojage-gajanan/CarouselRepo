@@ -1,0 +1,35 @@
+
+.container
+{
+    width:100%;
+    padding:2px;
+ }
+
+.klm-header
+{
+   width:100%;
+  background-image: url("/assets/images/af_pattern_bg.png");
+  padding: 2px; 
+  border:2px solid gray;
+  height:30px;
+
+}
+
+
+@media (min-width: 768px) {
+.container
+{
+    width:100%;
+    padding:2px;
+}
+.klm-header
+{
+   width:100%;
+
+}
+.klm-carousel
+{
+     width:100%;
+
+}
+}
