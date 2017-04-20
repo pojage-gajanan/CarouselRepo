@@ -1,6 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgModel } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser';
 
 import {CarouselModule} from './Carousel/carousel.module';
 import { AppComponent } from './app.component';

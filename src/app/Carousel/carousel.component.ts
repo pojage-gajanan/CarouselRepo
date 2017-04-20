@@ -1,29 +1,29 @@
-import {Component, OnDestroy, Input} from '@angular/core';
-import {Slide} from './slide.component';
+import { Component, OnDestroy, Input } from '@angular/core';
+import { Slide } from './slide.component';
 
-export enum Direction {UNKNOWN, NEXT, PREV}
+export enum Direction { UNKNOWN, NEXT, PREV }
 
 @Component({
-    selector: 'carousel',
-    template: `
+  selector: 'carousel',
+  template: `
     <div (mouseenter)="pause()" (mouseleave)="play()" class="carousel slide" >
-      <ol class="carousel-indicators" [hidden]="slides.length <= 1" style="left:90%">
-         <li *ngFor="let slidez of slides" [class.active]="slidez.active === true" (click)="select(slidez)" ></li>
+      <ol class="carousel-indicators " [hidden]="slides.length <= 1">
+         <li class="indiv-indicator"  *ngFor="let slidez of slides" [class.active]="slidez.active === true" (click)="select(slidez)" ></li>
       </ol>
       <div class="carousel-inner"><ng-content></ng-content></div>
                   <a class="left carousel-control carousel-custom" (click)="prev()" [hidden]="!slides.length">
                   <span class="glyphicon glyphicon-chevron-left"></span>
                   </a>
-                  <a class="right carousel-control" (click)="next()" [hidden]="!slides.length">
+                  <a class="right carousel-control carousel-custom" (click)="next()" [hidden]="!slides.length">
                   <span class="glyphicon glyphicon-chevron-right"></span>
                  </a>
     </div>
   `,
-   styleUrls: ['carouselstyle.css']
+  styleUrls: ['carousel.component.css']
 })
 
 export class Carousel {
-  
+
   private slides: Array<Slide> = [];
   private currentInterval: any;
   private isPlaying: boolean;
@@ -39,9 +39,9 @@ export class Carousel {
     return this._interval;
   }
 
-    constructor() {
-         console.log("Carousel created");       
-    }
+  constructor() {
+    console.log("Carousel created");
+  }
 
   public set interval(value: number) {
     this._interval = value;
@@ -51,7 +51,7 @@ export class Carousel {
   public getInstance() {
     return this;
   }
-  
+
   public select(nextSlide: Slide, direction: Direction = Direction.UNKNOWN) {
     let nextIndex = nextSlide.index;
     if (direction === Direction.UNKNOWN) {
@@ -167,17 +167,17 @@ export class Carousel {
     }
   }
 
-   public removeSlide(slide:Slide) {
-        this.slides.splice(slide.index, 1);
+  public removeSlide(slide: Slide) {
+    this.slides.splice(slide.index, 1);
 
-        if (this.slides.length === 0) {
-            this.currentSlide = null;
-            return;
-        }
-
-        for (let i = 0; i < this.slides.length; i++) {
-            this.slides[i].index = i;
-        }
+    if (this.slides.length === 0) {
+      this.currentSlide = null;
+      return;
     }
+
+    for (let i = 0; i < this.slides.length; i++) {
+      this.slides[i].index = i;
+    }
+  }
 }
 

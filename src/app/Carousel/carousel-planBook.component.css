@@ -9,11 +9,12 @@ text-align:left;
   text-align:left;
   font-style: normal;
    font-weight: lighter;
-  border-bottom: 1px solid #337ab7;;
+  border-bottom: 1px solid #337ab7;
 }
+
 .btn-cls
 {
-  background-color: #ff8000;
+   background-color: #ff8000;
   color:#ffffff;
 }
 .collapsed-div
@@ -28,8 +29,8 @@ text-align:left;
 .formContainer {
   background-color: #ffffff;
   padding-top: 1.2em;
-  max-width: 320px;
-  width:300px;
+  max-width: 420px;
+  width:400px;
   position: relative;
   padding-bottom: 15px; 
   top:0px;
@@ -42,8 +43,7 @@ text-align:left;
   margin:2px;
   color:#003145;
   text-align:left;
-  
-}
+  }
 
 @media (min-width: 768px) {
 .carousel-custom {
@@ -54,8 +54,8 @@ text-align:left;
   display:none;
 }
 .formContainer {
-  left:20px;
-  top:40px;
+  left:30px;
+  top:10px;
     height:300px;
   }
   .collapsed-div
@@ -65,13 +65,8 @@ text-align:left;
 }
 
 @media (min-width: 1024px) {
-
 .formContainer {
-  top:140px;
+  top:70px;
   }
-
-
-
-
 }
 

@@ -11,12 +11,13 @@ export class CarouselService {
 
   constructor(private http: Http) { }
 
-  getCarouselResources() :Observable<any>{
+  getCarouselResources(): Observable<any> {
 
     return this.http.get(this.url).map((response: Response) => response.json()).catch(this.handleError);
   }
 
   private handleError(error: Response | any) {
+
     let errMsg: string;
     if (error instanceof Response) {
       const body = error.json() || '';
