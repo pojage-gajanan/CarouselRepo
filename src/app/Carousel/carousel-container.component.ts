@@ -20,7 +20,7 @@ export class CarouselContainer {
         this.addNewSlide();
     }
 
-    private addNewSlide() {
+    public addNewSlide() {
         this.carouselService.getCarouselResources().subscribe((res) => this.slides = res.responseObj,
           error => this.errorMessage = <any>error);
     }
