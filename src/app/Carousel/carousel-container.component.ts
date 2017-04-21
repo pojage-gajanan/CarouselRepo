@@ -5,7 +5,7 @@ import { CarouselService } from './carousel.service';
 @Component({
     selector: 'carousel-cmp',
     templateUrl: './carousel-container.html',
-    styleUrls: ['./carousel.component.css'],
+    styleUrls: ['./carousel.component.scss'],
     providers: [CarouselService]
 })
 

@@ -19,7 +19,7 @@ export enum Direction { UNKNOWN, NEXT, PREV }
                  </a>
     </div>
   `,
-  styleUrls: ['./carousel.component.css']
+  styleUrls: ['./carousel.component.scss']
 })
 
 export class Carousel {

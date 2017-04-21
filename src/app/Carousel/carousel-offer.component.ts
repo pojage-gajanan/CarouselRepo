@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core';
     <img src={{url}} alt={{url}}>
     </a>
     </div>`,
-    styleUrls: ['carousel.component.css']
+    styleUrls: ['carousel.component.scss']
 })
 
 export class CarouselOfferComponent {

@@ -1,0 +1,57 @@
+$primary-color:#1E90FF;
+$secondary-color: #ffffff;
+
+.formContainer
+{
+  background-color: $secondary-color;
+  padding-top: 1.2em;
+  max-width: 420px;
+  width:400px;
+  position: relative;
+  padding-bottom: 15px; 
+  top:0px;
+  height:450px;
+
+  .header-cls
+  {
+   color:$primary-color;
+   text-align:left;
+   border-bottom: 1px solid $primary-color;
+ }
+
+ .form-group-custom
+ {
+   padding:5px;
+   margin:2px;
+   color:#003145;
+    .label-cls
+    {
+      text-align:left;
+    }
+ }
+
+  .btn-cls
+   {
+      background-color: #ff8000;
+      color:$secondary-color;
+   } 
+ }
+
+@media (min-width: 768px)
+{
+  .formContainer 
+  {
+    left:30px;
+    top:10px;
+    height:300px;
+  }
+}
+
+@media (min-width: 1024px) 
+{
+ .formContainer 
+  {
+   top:70px;
+  }
+}
+

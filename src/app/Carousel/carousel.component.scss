@@ -1,0 +1,82 @@
+
+$primary-color: #ffffff;
+$elem-width:100%;
+h3,h4{
+  color:$primary-color;
+}
+
+/*mixin for carousel slider Component*/
+.carousel-panel
+{
+  max-height:490px;
+  width:$elem-width;
+     .carousel-slider-img
+     {
+       margin:auto;
+       width:$elem-width; 
+       min-height:450px;
+     }
+    .carousel-custom-content
+    {
+      min-height:400px;
+      top:0px;
+      width:200px;
+    }
+    .carousel-dynamicContent
+    {
+      display:none;
+    }
+}
+
+
+.carousel-custom
+{
+width:20px;
+}
+
+.indiv-indicator
+{
+    background-color: $primary-color;
+    border:1px solid green;
+}
+
+.carousel-indicators .active {
+  background-color: darkblue;
+   }
+
+@media (min-width: 768px)
+{
+  .carousel-dynamicContent
+  {
+    display:block;
+    position:absolute;
+    top:10px;
+    left:70%;
+    height:40px;
+  }
+  .form-cls
+  {
+    position:relative;
+    top:20px;
+  }
+  .carousel-indicators 
+  {
+    left:70%
+  }
+  .carousel-indicators li
+  {
+    left:40%;
+    text-align:right;
+    margin-right:10px;
+    position:relative;
+  }
+}
+
+/*disable click event for Indicator on mobile devices*/
+ @media (max-width: 767px) 
+ {
+   .indiv-indicator
+   {
+    pointer-events: none; 
+   }
+}
