@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 
-import { PlanBookComponent } from './carousel-planBook.component';
+import { PlanBookComponent } from './PlanBook/carousel-planBook.component';
 import { CarouselContainer } from './carousel-container.component';
 import { Carousel } from './carousel.component';
 import { Slide } from './slide.component';

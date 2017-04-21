@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
     <h3>This is festival season..</h3>
     <h4>{{msg}}</h4>
     <a href="">
-    <img src={{url}} stye="width:40px;height:50px;" alt={{url}}>
+    <img src={{url}} alt={{url}}>
     </a>
     </div>`,
     styleUrls: ['carousel.component.css']

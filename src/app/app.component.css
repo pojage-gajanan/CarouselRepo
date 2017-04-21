@@ -7,15 +7,13 @@
 
 .klm-header
 {
-   width:100%;
   background-image: url("/assets/images/klm_airline.png");
   border:2px solid gray;
   height:60px;
   background-repeat: no-repeat;
-  padding-left:10px;
 }
+
 .klm-carousel
 {
-    max-height:490px;
-    width:100%;
+   max-height:490px;
 }

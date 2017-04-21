@@ -7,7 +7,7 @@ export enum Direction { UNKNOWN, NEXT, PREV }
   selector: 'carousel',
   template: `
     <div (mouseenter)="pause()" (mouseleave)="play()" class="carousel slide" >
-      <ol class="carousel-indicators " [hidden]="slides.length <= 1">
+      <ol class="carousel-indicators" [hidden]="slides.length <= 1">
          <li class="indiv-indicator"  *ngFor="let slidez of slides" [class.active]="slidez.active === true" (click)="select(slidez)" ></li>
       </ol>
       <div class="carousel-inner"><ng-content></ng-content></div>
@@ -19,7 +19,7 @@ export enum Direction { UNKNOWN, NEXT, PREV }
                  </a>
     </div>
   `,
-  styleUrls: ['carousel.component.css']
+  styleUrls: ['./carousel.component.css']
 })
 
 export class Carousel {
@@ -58,7 +58,7 @@ export class Carousel {
       direction = nextIndex > this.getCurrentIndex() ? Direction.NEXT : Direction.PREV;
     }
 
-    // Prevent this user-triggered transition from occurring if there is already one in progress
+   
     if (nextSlide && nextSlide !== this.currentSlide) {
       this.goNext(nextSlide, direction);
     }
@@ -79,7 +79,7 @@ export class Carousel {
 
     this.currentSlide = slide;
 
-    // every time you change slides, reset the timer
+    // on changing slider ,reset Timer
     this.restartTimer();
   }
 

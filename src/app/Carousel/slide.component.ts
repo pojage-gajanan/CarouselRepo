@@ -7,10 +7,9 @@ import { Carousel, Direction } from './carousel.component';
     template: `
     <div [class.active]="active" class="item text-center">
       <ng-content></ng-content>
-     
-    </div>
+      </div>
   `,
-    styleUrls: ['carousel.component.css']
+    styleUrls: ['./carousel.component.css']
 })
 export class Slide implements OnInit, OnDestroy {
 
